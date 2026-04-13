@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import { LuCircleArrowLeft, LuCircleArrowRight } from "react-icons/lu";
 import offerImg from "../../assets/img/offercards.png";
-import "./OfferSlider.scss";
+import "./offerSlider.scss";
 
 const images = Array(5).fill(offerImg);
 
