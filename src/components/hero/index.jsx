@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.scss";
 import carImg from "../../assets/img/hero-car.png";
-import Navbar from "../navbar";
+import Navbar from "../Navbar";
 import { LuCircleArrowRight } from "react-icons/lu";
 import SearchBar from "../searchbar";
 
