@@ -9,9 +9,9 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="container navbar-inner">
-          <div className="logo">
+          {/* <div className="logo">
             <img src={logo} alt="Valam Logo" />
-          </div>
+          </div> */}
 
           <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
             <li>Home</li>
