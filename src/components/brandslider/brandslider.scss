@@ -1,0 +1,67 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.frame {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+}
+.card{
+  width: 120px;
+  height: 90px;
+}
+// .card img {
+//   max-width: 70%;
+//   max-height: 70%;
+//   object-fit: contain;
+// }
+.card img{
+  width: 100%;
+  height: 100%;
+}
+.container-titile {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.arrows button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.slide-item {
+  width: fit-content;
+  margin-right: 10px;
+}
+
+@media (max-width: 550px) {
+  .brandslidermobile{
+    display: none;
+  }
+}
+

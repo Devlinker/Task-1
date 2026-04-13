@@ -1,0 +1,156 @@
+.footer {
+  position: relative;
+  color: #ffffff;
+  padding: 30px 0px;
+  margin-top: 60px;
+  font-family: "Inter", sans-serif;
+
+  background-image: url("../assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(10, 25, 80, 0.94),
+      rgba(18, 45, 135, 0.94)
+    );
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    span {
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      opacity: 0.75;
+      margin-top: 2px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 28px;
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 14px;
+
+    a {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      svg {
+        font-size: 14px;
+      }
+
+      &:hover {
+        background: #ffffff;
+        color: #122d87;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 12px 0;
+  }
+
+  &__bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    opacity: 0.8;
+
+    span {
+      opacity: 0.6;
+    }
+  }
+
+  &__bottom p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__top {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
+    &__nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    &__bottom .container {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin-top: 45px;
+  margin-bottom: 16px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.view-all {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 45px;
+}
+
+.faq-item {
+  background: #f6f7f9;
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+
+  svg {
+    font-size: 18px;
+  }
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .faq-header {
+    // margin-top: 40px;
+
+    h2 {
+      font-size: 22px;
+    }
+  }
+
+  .faq-question {
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-header {
+    // margin-top: 32px;
+    margin-bottom: 14px;
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .view-all {
+    font-size: 13px;
+  }
+
+  .faq-item {
+    padding: 12px 14px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 425px) {
+  .faq-header {
+    // margin-top: 28px;
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  .faq-item {
+    padding: 10px 12px;
+  }
+
+  .faq-question {
+    font-size: 13.5px;
+  }
+
+  .faq-answer {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .faq-header {
+    // margin-top: 24px;
+
+    h2 {
+      font-size: 17px;
+    }
+  }
+
+  .faq-question {
+    font-size: 13px;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .faq-header {
+    // margin-top: 20px;
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  .view-all {
+    font-size: 12px;
+  }
+
+  .faq-question {
+    font-size: 12.5px;
+  }
+
+  .faq-answer {
+    font-size: 11.5px;
+  }
+}

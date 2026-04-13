@@ -1,0 +1,61 @@
+.offer-slider {
+  width: 1200px;
+  margin: 10px auto;
+  padding: 20px;
+  // background: #eef6ff;
+  border-radius: 14px;
+}
+
+.slide {
+  padding: 0 10px;
+
+  img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+  }
+}
+
+.slick-slide > div {
+  display: flex;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+
+  button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    font-size: 32px;
+    color: #000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}
+
+@media (max-width: 1284px) {
+  .offer-slider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-buttons {
+    display: none;
+  }
+}
