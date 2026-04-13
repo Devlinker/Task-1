@@ -1,5 +1,5 @@
 import "./footer.scss";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/Logo.png";
 
 import {
   FaFacebookF,
